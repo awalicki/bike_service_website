@@ -1,4 +1,10 @@
-import './style.css'
+import './style.css';
+import Lenis from 'lenis';
+import { initCursor } from './cursor';
 
-// Zostawione dla Lenis i innej logiki, która będzie dodana w następnych krokach
-console.log('Main.ts załadowany');
+const lenis = new Lenis({
+  autoRaf: true,
+  smoothWheel: true,
+});
+
+initCursor();

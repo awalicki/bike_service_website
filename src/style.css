@@ -1,15 +1,2 @@
-/* 
-  Globalne style (zostaną rozbudowane w Kroku 2).
-  Teraz tylko reset.
-*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #121212; /* Tymczasowy matte-black */
-  color: #F5F5F5; /* Tymczasowy matte-white */
-  font-family: sans-serif;
-}
+@import './styles/variables.css';
+@import './styles/global.css';

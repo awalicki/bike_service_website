@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+
+:root {
+  --color-bg: #121212;
+  --color-text: #F5F5F5;
+  --color-accent: #333333;
+  --color-border: #2A2A2A;
+  
+  --font-main: 'Inter', sans-serif;
+  
+  --transition-fast: 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  
+  --z-header: 100;
+  --z-cursor: 9999;
+}
