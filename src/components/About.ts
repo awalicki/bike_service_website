@@ -11,8 +11,13 @@ export const renderAbout = () => {
           <p class="about-text">${about.description1}</p>
           <p class="about-text">${about.description2}</p>
         </div>
-        <div class="about-image-wrapper">
-          <img src="${about.imagePath}" alt="Premium Bike Detail" loading="lazy" class="about-image" />
+        <div class="about-images">
+          <div class="about-image-wrapper img-1">
+            <img src="${about.imagePath}" alt="Obora Detale" loading="lazy" class="about-image" />
+          </div>
+          <div class="about-image-wrapper img-2">
+            <img src="${about.imagePath2}" alt="Obora Praca" loading="lazy" class="about-image" />
+          </div>
         </div>
       </div>
     </section>

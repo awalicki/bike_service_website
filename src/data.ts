@@ -12,17 +12,18 @@ export const siteData = {
     { name: "Kontakt", href: "#contact" },
   ],
   hero: {
-    title: "BEZKOMPROMISOWY",
+    title: "OBORA",
     subtitle: "SERWIS ROWEROWY",
   },
   about: {
     title: "Pasja i Precyzja",
     description1: "Jesteśmy ekspertami, dla których rower to coś więcej niż środek transportu. Do każdego zlecenia podchodzimy z inżynieryjną dokładnością.",
     description2: "Nasze standardy to absolutny brak kompromisów. Każda śruba, każdy mechanizm muszą działać perfekcyjnie.",
-    imagePath: "/img/ft1.png" // Korzystamy z obrazu umieszczonego w public/img
+    imagePath: "/img/ft1.png",
+    imagePath2: "/img/ft2.jpeg"
   },
   footer: {
-    copyright: "© 2026 Premium Bike Service. Wszelkie prawa zastrzeżone.",
+    copyright: "© 2026 OBORA Serwis Rowerowy. Wszelkie prawa zastrzeżone.",
     developerCredits: "Chcesz podobną stronę internetową? Napisz na: ",
     developerEmail: "awalicki04@gmail.com"
   }

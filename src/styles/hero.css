@@ -16,25 +16,23 @@
 }
 
 .hero-title {
-  font-size: clamp(3rem, 8vw, 8rem);
+  font-size: clamp(4rem, 12vw, 10rem);
   font-weight: 900;
   line-height: 1;
   letter-spacing: -0.04em;
   margin: 0;
   text-transform: uppercase;
-  background: linear-gradient(180deg, var(--color-text) 0%, rgba(245, 245, 245, 0.5) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-text);
+  text-shadow: 0 0 40px rgba(255, 77, 0, 0.3);
 }
 
 .hero-subtitle {
-  font-size: clamp(1rem, 3vw, 2rem);
-  font-weight: 300;
-  letter-spacing: 0.2em;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #888;
-  margin-top: 1rem;
+  color: var(--color-accent);
+  margin-top: 0.5rem;
 }
 
 .hero-bg {
@@ -59,19 +57,20 @@
 .bike-svg path,
 .bike-svg polygon,
 .bike-svg line,
+.bike-svg polyline,
 .bike-svg circle {
-  stroke-dasharray: 3000;
-  stroke-dashoffset: 3000;
-  animation: drawLine 4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: drawLine 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 /* Lekkie opóźnienie dla różnych elementów dla bardziej organicznego efektu */
 .bike-svg circle {
-  animation-delay: 0.5s;
+  animation-delay: 0.2s;
 }
 
 .bike-svg line:nth-child(even) {
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 
 @keyframes drawLine {

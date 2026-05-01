@@ -20,7 +20,7 @@ export const renderHeader = () => {
       </div>
       <nav class="main-nav" aria-label="Główna nawigacja">
         <div class="nav-content">
-          <div class="logo">PBS.</div>
+          <div class="logo">OBORA.</div>
           <div class="nav-links">
             ${navLinks}
           </div>
