@@ -20,7 +20,7 @@ export const initCursor = () => {
     cursorX += dx * 0.2;
     cursorY += dy * 0.2;
     
-    cursor.style.transform = `translate(${cursorX}px, ${cursorY}px)`;
+    cursor.style.transform = `translate(calc(${cursorX}px - 50%), calc(${cursorY}px - 50%))`;
     requestAnimationFrame(updateCursor);
   };
 
