@@ -11,7 +11,7 @@ export const renderHero = () => {
       </div>
       
       <div class="hero-bg">
-        <svg viewBox="0 0 800 600" class="bike-svg" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg aria-hidden="true" viewBox="0 0 800 600" class="bike-svg" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <!-- Rama (Frame) -->
           <polygon points="250,350 400,200 600,200 500,450" />
           <!-- Rury wspornikowe -->

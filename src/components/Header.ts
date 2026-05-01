@@ -18,7 +18,7 @@ export const renderHeader = () => {
           <span>${contact.location}</span>
         </div>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Główna nawigacja">
         <div class="nav-content">
           <div class="logo">PBS.</div>
           <div class="nav-links">

@@ -14,6 +14,7 @@ export const renderContact = () => {
             referrerpolicy="no-referrer-when-downgrade"
             class="contact-map"
             data-lenis-prevent
+            title="Google Maps - Lokalizacja naszego serwisu"
           ></iframe>
           <div class="map-overlay"></div>
         </div>
