@@ -4,6 +4,8 @@ import { initCursor } from './cursor';
 import { renderHeader } from './components/Header';
 import { renderHero } from './components/Hero';
 import { renderAbout } from './components/About';
+import { renderContact } from './components/Contact';
+import { renderFooter } from './components/Footer';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 
@@ -13,8 +15,9 @@ if (app) {
     <main>
       ${renderHero()}
       ${renderAbout()}
+      ${renderContact()}
     </main>
-    <footer></footer>
+    ${renderFooter()}
   `;
 }
 

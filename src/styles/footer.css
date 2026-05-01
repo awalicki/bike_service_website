@@ -1,0 +1,36 @@
+.footer {
+  background-color: #0a0a0a;
+  border-top: 1px solid var(--color-border);
+  padding: 48px 24px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.developer-credit {
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.developer-credit a {
+  color: #888;
+  text-decoration: underline;
+  transition: color var(--transition-fast);
+}
+
+.developer-credit a:hover {
+  color: var(--color-text);
+}
