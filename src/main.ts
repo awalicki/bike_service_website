@@ -3,6 +3,7 @@ import Lenis from 'lenis';
 import { initCursor } from './cursor';
 import { renderHeader } from './components/Header';
 import { renderHero } from './components/Hero';
+import { renderAbout } from './components/About';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 
@@ -11,6 +12,7 @@ if (app) {
     ${renderHeader()}
     <main>
       ${renderHero()}
+      ${renderAbout()}
     </main>
     <footer></footer>
   `;
