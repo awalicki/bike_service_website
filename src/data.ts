@@ -19,8 +19,8 @@ export const siteData = {
     title: "Pasja i Precyzja",
     description1: "Jesteśmy ekspertami, dla których rower to coś więcej niż środek transportu. Do każdego zlecenia podchodzimy z inżynieryjną dokładnością.",
     description2: "Nasze standardy to absolutny brak kompromisów. Każda śruba, każdy mechanizm muszą działać perfekcyjnie.",
-    imagePath: "/img/ft1.png",
-    imagePath2: "/img/ft2.jpeg"
+    imagePath: `${import.meta.env.BASE_URL}img/ft1.png`,
+    imagePath2: `${import.meta.env.BASE_URL}img/ft2.jpeg`
   },
   footer: {
     copyright: "© 2026 OBORA Serwis Rowerowy. Wszelkie prawa zastrzeżone.",
