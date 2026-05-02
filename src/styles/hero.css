@@ -5,7 +5,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding-top: 80px; /* Offset for header */
+  padding-top: 80px;
+  /* Offset for header */
 }
 
 .hero-content {
@@ -71,6 +72,10 @@
 
 .bike-svg line:nth-child(even) {
   animation-delay: 0.1s;
+}
+
+.hero-subtitle {
+  color: #c0c0c0;
 }
 
 @keyframes drawLine {

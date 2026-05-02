@@ -5,12 +5,12 @@
   --color-text: #F5F5F5;
   --color-accent: #FF4D00;
   --color-border: #333333;
-  
+
   --font-main: 'Inter', sans-serif;
-  
+
   --transition-fast: 0.2s cubic-bezier(0.25, 1, 0.5, 1);
   --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  
+
   --z-header: 100;
   --z-cursor: 9999;
 }
