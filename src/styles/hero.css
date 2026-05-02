@@ -32,7 +32,7 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: #c0c0c0;
   margin-top: 0.5rem;
 }
 
@@ -74,9 +74,7 @@
   animation-delay: 0.1s;
 }
 
-.hero-subtitle {
-  color: #c0c0c0;
-}
+
 
 @keyframes drawLine {
   to {
