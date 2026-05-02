@@ -26,7 +26,7 @@ var $=Object.defineProperty;var P=(t,e,s)=>e in t?$(t,e,{enumerable:!0,configura
       </div>
       
       <div class="hero-bg">
-        <svg aria-hidden="true" viewBox="0 0 800 600" class="bike-svg" fill="none" stroke="#333333" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <svg aria-hidden="true" viewBox="0 0 800 600" class="bike-svg" fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
           <!-- Koła -->
           <circle cx="200" cy="400" r="130" />
           <circle cx="600" cy="400" r="130" />
@@ -54,7 +54,7 @@ var $=Object.defineProperty;var P=(t,e,s)=>e in t?$(t,e,{enumerable:!0,configura
           
           <!-- Sztyca i siodło -->
           <line x1="300" y1="200" x2="280" y2="150" />
-          <path d="M240 150 L 310 150 Q 320 150 320 160 L 250 160 Z" fill="var(--color-accent)" />
+          <path d="M240 150 L 310 150 Q 320 150 320 160 L 250 160 Z" class="bike-saddle" />
           
           <!-- Napęd (korba, zębatka, geje) -->
           <circle cx="350" cy="400" r="35" />

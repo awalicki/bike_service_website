@@ -11,7 +11,7 @@ export const renderHero = () => {
       </div>
       
       <div class="hero-bg">
-        <svg aria-hidden="true" viewBox="0 0 800 600" class="bike-svg" fill="none" stroke="var(--color-accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <svg aria-hidden="true" viewBox="0 0 800 600" class="bike-svg" fill="none" stroke="#FF4D00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
           <!-- Koła -->
           <circle cx="200" cy="400" r="130" />
           <circle cx="600" cy="400" r="130" />
@@ -39,7 +39,7 @@ export const renderHero = () => {
           
           <!-- Sztyca i siodło -->
           <line x1="300" y1="200" x2="280" y2="150" />
-          <path d="M240 150 L 310 150 Q 320 150 320 160 L 250 160 Z" fill="var(--color-accent)" />
+          <path d="M240 150 L 310 150 Q 320 150 320 160 L 250 160 Z" fill="#FF4D00" />
           
           <!-- Napęd (korba, zębatka, geje) -->
           <circle cx="350" cy="400" r="35" />
