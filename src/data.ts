@@ -45,12 +45,12 @@ export const siteData = {
     values: [
       {
         title: "Precyzja",
-        text: "Każdy element sprawdzamy dwukrotnie. Nasze standardy nie znają kompromisów.",
+        text: "Wiemy, że na trasie liczy się każdy detal. Zwracamy uwagę na odpowiedni moment dokręcenia śrub i likwidujemy nawet najmniejsze luzy. Nie wypuścimy sprzętu, dopóki wszystko nie będzie działać idealnie.",
         imagePath: `${base}img/ft10.jpg`,
       },
       {
         title: "Doświadczenie",
-        text: "Lata pracy z rowerami wszystkich marek i typów. Od szosowych po górskie.",
+        text: "Przez nasze stojaki serwisowe przeszły dziesiątki jednośladów. Niezależnie czy serwisujemy wyścigową szosę, enduro czy rower miejski\u00a0– znamy ich bolączki i wiemy, jak je rozwiązać.",
         imagePath: `${base}img/ft11.jpg`,
       },
     ],
@@ -58,22 +58,22 @@ export const siteData = {
   services: [
     {
       title: "Przegląd i Diagnostyka",
-      description: "Kompleksowa ocena stanu technicznego roweru. Sprawdzamy każdy układ i dostarczamy pełny raport.",
+      description: "Bierzemy Twój rower pod lupę. Rzetelnie oceniamy stan techniczny, wyłapujemy zużyte części i sprawdzamy bezpieczeństwo konstrukcji, żeby nic nie zaskoczyło Cię na trasie.",
       imagePath: `${base}img/ft12.jpg`,
     },
     {
       title: "Serwis Napędowy",
-      description: "Czyszczenie, regulacja i wymiana komponentów napędu. Łańcuch, kaseta, przerzutki, korby.",
+      description: "Cisza i płynność to podstawa. Precyzyjnie czyścimy napęd, dobieramy odpowiednie smary i regulujemy przerzutki tak, aby biegi wchodziły gładko i bez zająknięcia.",
       imagePath: `${base}img/ft7.jpg`,
     },
     {
       title: "Układy Hamulcowe",
-      description: "Regulacja i serwis hamulców hydraulicznych oraz mechanicznych. Wymiana klocków i okładzin.",
+      description: "Zadbamy o to, żebyś zawsze mógł zatrzymać się w porę. Odpowietrzamy układy hydrauliczne, wymieniamy płyny i klocki oraz centrujemy tarcze. Hamulce mają działać w punkt.",
       imagePath: `${base}img/ft5.jpg`,
     },
     {
       title: "Tuning i Customizacja",
-      description: "Personalizacja roweru według Twoich potrzeb. Dobór komponentów, pozycja jazdy, ustawienia.",
+      description: "Pomagamy wyciągnąć maksimum z Twojej maszyny. Składamy rowery na zamówienie, doradzamy przy upgrade'ach sprzętowych i dobieramy części pod Twój styl jazdy.",
       imagePath: `${base}img/ft6.jpg`,
     },
   ],

@@ -24,6 +24,20 @@ if (app) {
   initHeader();
 }
 
+// Global delegated scroll handler — no # in URL bar
+document.addEventListener('click', (e) => {
+  const link = (e.target as HTMLElement).closest<HTMLElement>('[data-scroll]');
+  if (!link) return;
+  e.preventDefault();
+  const sectionId = link.getAttribute('data-scroll');
+  if (!sectionId) return;
+  const target = document.getElementById(sectionId);
+  if (target) {
+    const offset = target.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top: offset, behavior: 'smooth' });
+  }
+});
+
 new Lenis({
   autoRaf: true,
   smoothWheel: true,

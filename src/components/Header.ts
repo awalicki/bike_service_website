@@ -4,7 +4,10 @@ export const renderHeader = () => {
   const { contact, navigation } = siteData;
 
   const navLinks = navigation
-    .map(link => `<a href="${link.href}" class="nav-link">${link.name}</a>`)
+    .map(link => {
+      const section = link.href.replace('#', '');
+      return `<a href="javascript:void(0)" data-scroll="${section}" class="nav-link">${link.name}</a>`;
+    })
     .join('');
 
   return `
@@ -20,7 +23,7 @@ export const renderHeader = () => {
       </div>
       <nav class="main-nav" aria-label="Główna nawigacja">
         <div class="nav-content">
-          <a href="#home" class="logo">OBORA.</a>
+          <a href="javascript:void(0)" data-scroll="home" class="logo">OBORA.</a>
           <div class="nav-links" id="nav-links">
             ${navLinks}
           </div>
@@ -37,18 +40,18 @@ export const renderHeader = () => {
 
 export const initHeader = () => {
   const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
+  const navLinksEl = document.getElementById('nav-links');
 
   hamburger?.addEventListener('click', () => {
-    const isOpen = navLinks?.classList.toggle('nav-links--open') ?? false;
+    const isOpen = navLinksEl?.classList.toggle('nav-links--open') ?? false;
     hamburger.setAttribute('aria-expanded', String(isOpen));
     hamburger.classList.toggle('hamburger--open', isOpen);
   });
 
-  // Close menu on link click (smooth scroll will handle the rest)
-  navLinks?.querySelectorAll('.nav-link').forEach(link => {
+  // Close mobile menu on nav link click
+  navLinksEl?.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
-      navLinks.classList.remove('nav-links--open');
+      navLinksEl.classList.remove('nav-links--open');
       hamburger?.classList.remove('hamburger--open');
       hamburger?.setAttribute('aria-expanded', 'false');
     });

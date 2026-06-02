@@ -4,15 +4,18 @@ export const renderHero = () => {
   const { hero } = siteData;
 
   const panels = hero.teaserPanels
-    .map(panel => `
-      <a href="${panel.href}" class="teaser-panel" style="background-image: url('${panel.imagePath}')">
-        <div class="teaser-overlay"></div>
-        <div class="teaser-content">
-          <span class="teaser-label">${panel.label}</span>
-          <span class="teaser-cta">${panel.cta} →</span>
-        </div>
-      </a>
-    `).join('');
+    .map(panel => {
+      const section = panel.href.replace('#', '');
+      return `
+        <a href="javascript:void(0)" data-scroll="${section}" class="teaser-panel" style="background-image: url('${panel.imagePath}')">
+          <div class="teaser-overlay"></div>
+          <div class="teaser-content">
+            <span class="teaser-label">${panel.label}</span>
+            <span class="teaser-cta">${panel.cta} →</span>
+          </div>
+        </a>
+      `;
+    }).join('');
 
   return `
     <section id="home" class="hero">

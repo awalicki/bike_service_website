@@ -18,7 +18,7 @@ export const renderServices = () => {
     <section id="services" class="services">
       <div class="services-header">
         <h2 class="section-title">Nasze Usługi</h2>
-        <p class="services-intro">Profesjonalny serwis rowerowy z pasją do każdego detalu.</p>
+        <p class="services-intro">Twój rower w dobrych rękach. Naprawiamy, regulujemy i doradzamy, żebyś mógł po prostu cieszyć się jazdą.</p>
       </div>
       <div class="services-grid">
         ${cards}
