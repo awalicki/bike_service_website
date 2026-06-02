@@ -81,5 +81,7 @@ export const siteData = {
     copyright: "© 2026 OBORA Serwis Rowerowy. Wszelkie prawa zastrzeżone.",
     developerCredits: "Chcesz podobną stronę internetową? Napisz na: ",
     developerEmail: "awalicki04@gmail.com",
+    nip: "000-000-00-00",
+    address: "ul. Przykładowa 1, 00-001 Warszawa",
   },
 };

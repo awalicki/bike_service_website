@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+/* Czcionka Inter jest self-hostowana przez @fontsource/inter (import w main.ts) */
 
 :root {
   --color-bg: #121212;

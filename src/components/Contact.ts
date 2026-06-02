@@ -6,17 +6,20 @@ export const renderContact = () => {
   return `
     <section id="contact" class="contact">
       <div class="contact-container">
-        <div class="contact-map-wrapper">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.3543850604!2d20.9211124!3d52.2330653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            class="contact-map"
-            data-lenis-prevent
-            title="Google Maps — Lokalizacja serwisu OBORA"
-          ></iframe>
-          <div class="map-overlay"></div>
+        <div class="contact-map-wrapper" id="contact-map-wrapper">
+          <div class="map-consent" id="map-consent">
+            <div class="map-consent-inner">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              <p class="map-consent-title">Mapa Google</p>
+              <p class="map-consent-desc">Wyświetlenie mapy wymaga załadowania usługi Google Maps, która może ustawiać pliki cookie oraz przetwarzać Twój adres IP.</p>
+              <button class="map-consent-btn" id="load-map-btn">Załaduj mapę</button>
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="map-consent-policy">Polityka prywatności Google ↗</a>
+            </div>
+          </div>
+          <div class="map-overlay" id="map-overlay-div" style="display:none;"></div>
         </div>
 
         <div class="contact-form-wrapper">
@@ -36,6 +39,10 @@ export const renderContact = () => {
             </div>
             <button type="submit" class="submit-btn">Wyślij wiadomość</button>
           </form>
+
+          <p class="form-rodo">
+            Wysyłając wiadomość, przekazujesz nam swoje imię, adres e-mail i treść zapytania w celu udzielenia odpowiedzi (art.&nbsp;6 ust.&nbsp;1 lit.&nbsp;f RODO). Dane przechowujemy przez 12&nbsp;miesięcy. Szczegóły w <button class="rodo-link" data-privacy="open">Polityce Prywatności</button>.
+          </p>
 
           <div class="contact-direct">
             <p>Lub skontaktuj się bezpośrednio:</p>
