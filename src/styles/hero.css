@@ -6,7 +6,6 @@
   justify-content: center;
   overflow: hidden;
   padding-top: 80px;
-  /* Offset for header */
 }
 
 .hero-content {
@@ -65,7 +64,6 @@
   animation: drawLine 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
-/* Lekkie opóźnienie dla różnych elementów dla bardziej organicznego efektu */
 .bike-svg circle {
   animation-delay: 0.2s;
 }
@@ -74,10 +72,87 @@
   animation-delay: 0.1s;
 }
 
-
-
 @keyframes drawLine {
-  to {
-    stroke-dashoffset: 0;
+  to { stroke-dashoffset: 0; }
+}
+
+/* Teaser panels */
+.teaser {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 55vh;
+  min-height: 360px;
+}
+
+.teaser-panel {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+}
+
+.teaser-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.35) 55%,
+    rgba(0, 0, 0, 0.1) 100%);
+  transition: background var(--transition-slow);
+}
+
+.teaser-panel:hover .teaser-overlay {
+  background: linear-gradient(to top,
+    rgba(18, 18, 18, 0.95) 0%,
+    rgba(18, 18, 18, 0.6) 55%,
+    rgba(18, 18, 18, 0.25) 100%);
+}
+
+.teaser-content {
+  position: absolute;
+  bottom: 48px;
+  left: 48px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.teaser-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(245, 245, 245, 0.55);
+}
+
+.teaser-cta {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 700;
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  transition: color var(--transition-fast);
+}
+
+.teaser-panel:hover .teaser-cta {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .teaser {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .teaser-panel {
+    height: 52vw;
+    min-height: 220px;
+  }
+
+  .teaser-content {
+    bottom: 28px;
+    left: 24px;
   }
 }

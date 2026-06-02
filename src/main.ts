@@ -1,9 +1,10 @@
 import './style.css';
 import Lenis from 'lenis';
 import { initCursor } from './cursor';
-import { renderHeader } from './components/Header';
+import { renderHeader, initHeader } from './components/Header';
 import { renderHero } from './components/Hero';
 import { renderAbout } from './components/About';
+import { renderServices } from './components/Services';
 import { renderContact } from './components/Contact';
 import { renderFooter } from './components/Footer';
 
@@ -15,10 +16,12 @@ if (app) {
     <main>
       ${renderHero()}
       ${renderAbout()}
+      ${renderServices()}
       ${renderContact()}
     </main>
     ${renderFooter()}
   `;
+  initHeader();
 }
 
 new Lenis({

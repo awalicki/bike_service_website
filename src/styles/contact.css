@@ -5,6 +5,7 @@
   z-index: 2;
 }
 
+/* Map + Form row */
 .contact-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -138,6 +139,11 @@
   transform-origin: left;
 }
 
+.contact-direct {
+  border-top: 1px solid var(--color-border);
+  padding-top: 32px;
+}
+
 .contact-direct p {
   color: #666;
   font-size: 0.875rem;
@@ -156,9 +162,16 @@
   opacity: 0.7;
 }
 
+
 @media (max-width: 992px) {
   .contact-container {
     grid-template-columns: 1fr;
     gap: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding-top: 80px;
   }
 }

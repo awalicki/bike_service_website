@@ -1,0 +1,128 @@
+.services {
+  padding: 120px 0 0;
+  background-color: var(--color-bg);
+}
+
+.services-header {
+  max-width: 1200px;
+  margin: 0 auto 64px;
+  padding: 0 24px;
+}
+
+.services-intro {
+  color: #999;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-top: 24px;
+  max-width: 480px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+}
+
+.service-card {
+  position: relative;
+  height: 480px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.service-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.45) 50%,
+    rgba(0, 0, 0, 0.1) 100%);
+  transition: background var(--transition-slow);
+}
+
+.service-card:hover .service-overlay {
+  background: linear-gradient(to top,
+    rgba(18, 18, 18, 0.97) 0%,
+    rgba(18, 18, 18, 0.65) 55%,
+    rgba(18, 18, 18, 0.25) 100%);
+}
+
+.service-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 48px;
+  z-index: 2;
+  transition: padding var(--transition-slow);
+}
+
+.service-num {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.service-title {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin: 0 0 0 0;
+  line-height: 1.1;
+  transition: margin var(--transition-slow);
+}
+
+.service-desc {
+  font-size: 0.95rem;
+  color: rgba(245, 245, 245, 0.7);
+  font-weight: 300;
+  line-height: 1.65;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.4s ease,
+              margin 0.4s ease;
+  margin-top: 0;
+}
+
+.service-card:hover .service-desc {
+  max-height: 120px;
+  opacity: 1;
+  margin-top: 14px;
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding-top: 80px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .service-card {
+    height: 300px;
+  }
+
+  .service-content {
+    padding: 28px 24px;
+  }
+
+  /* Always show desc on mobile (no hover) */
+  .service-desc {
+    max-height: 80px;
+    opacity: 1;
+    margin-top: 10px;
+  }
+}

@@ -3,22 +3,23 @@ import { siteData } from '../data';
 export const renderAbout = () => {
   const { about } = siteData;
 
+  const valuesHTML = about.values.map(v => `
+    <div class="value-card" style="background-image: url('${v.imagePath}')">
+      <div class="value-overlay"></div>
+      <div class="value-content">
+        <h3 class="value-title">${v.title}</h3>
+        <p class="value-text">${v.text}</p>
+      </div>
+    </div>
+  `).join('');
+
   return `
     <section id="about" class="about">
-      <div class="about-container">
-        <div class="about-content">
-          <h2 class="section-title">${about.title}</h2>
-          <p class="about-text">${about.description1}</p>
-          <p class="about-text">${about.description2}</p>
-        </div>
-        <div class="about-images">
-          <div class="about-image-wrapper img-1">
-            <img src="${about.imagePath}" alt="Obora Detale" loading="lazy" class="about-image" />
-          </div>
-          <div class="about-image-wrapper img-2">
-            <img src="${about.imagePath2}" alt="Obora Praca" loading="lazy" class="about-image" />
-          </div>
-        </div>
+      <div class="values-header">
+        <h2 class="section-title">Nasze Wartości</h2>
+      </div>
+      <div class="values-grid">
+        ${valuesHTML}
       </div>
     </section>
   `;
