@@ -8,7 +8,7 @@ export const renderFooter = () => {
       <div class="footer-top">
         <div class="footer-brand">
           <span class="footer-logo">OBORA.</span>
-          <p class="footer-tagline">Serwis Rowerowy — Warszawa</p>
+          <p class="footer-tagline">Serwis Rowerowy — Ujazd</p>
         </div>
         <div class="footer-contact-info">
           <a href="${contact.phoneLink}" class="footer-info-link">${contact.phone}</a>
@@ -21,8 +21,6 @@ export const renderFooter = () => {
         <div class="footer-legal-left">
           <p class="copyright">${footer.copyright}</p>
           <p class="footer-company-data">
-            NIP:&nbsp;<strong>${footer.nip}</strong>
-            &nbsp;·&nbsp;
             ${footer.address}
           </p>
         </div>

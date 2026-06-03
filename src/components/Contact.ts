@@ -7,19 +7,16 @@ export const renderContact = () => {
     <section id="contact" class="contact">
       <div class="contact-container">
         <div class="contact-map-wrapper" id="contact-map-wrapper">
-          <div class="map-consent" id="map-consent">
-            <div class="map-consent-inner">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-                <circle cx="12" cy="9" r="2.5"/>
-              </svg>
-              <p class="map-consent-title">Mapa Google</p>
-              <p class="map-consent-desc">Wyświetlenie mapy wymaga załadowania usługi Google Maps, która może ustawiać pliki cookie oraz przetwarzać Twój adres IP.</p>
-              <button class="map-consent-btn" id="load-map-btn">Załaduj mapę</button>
-              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="map-consent-policy">Polityka prywatności Google ↗</a>
-            </div>
-          </div>
-          <div class="map-overlay" id="map-overlay-div" style="display:none;"></div>
+          <iframe
+            class="contact-map-iframe"
+            src="https://maps.google.com/maps?q=51.56843033546453,19.91328672594859&z=15&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            data-lenis-prevent
+            title="Google Maps — Lokalizacja serwisu OBORA"
+          ></iframe>
+          <div class="map-overlay"></div>
         </div>
 
         <div class="contact-form-wrapper">

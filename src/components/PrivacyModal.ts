@@ -3,20 +3,19 @@ const policyHTML = `
   <p class="policy-date">Ostatnia aktualizacja: czerwiec 2026</p>
 
   <h3>1. Administrator danych osobowych</h3>
-  <p>Administratorem Twoich danych osobowych jest <strong>OBORA Serwis Rowerowy</strong> z siedzibą w Warszawie, adres e-mail: <a href="mailto:kontakt@oborabikes.pl">kontakt@oborabikes.pl</a>, telefon: +48 123 456 789.</p>
-  <p><em>Nota: Uzupełnij pełny adres siedziby i numer NIP przed wdrożeniem produkcyjnym.</em></p>
+  <p>Administratorem Twoich danych osobowych jest <strong>Arkadiusz Pytlewski</strong>, prowadzący działalność pod nazwą OBORA Serwis Rowerowy, adres: Bielina 3, 97-225 Ujazd, adres e-mail: <a href="mailto:oborabikeservice@gmail.com">oborabikeservice@gmail.com</a>, telefon: +48 664 474 610.</p>
 
   <h3>2. Jakie dane zbieramy i w jakim celu</h3>
   <h4>Formularz kontaktowy</h4>
   <p>Zbieramy: imię i nazwisko, adres e-mail, treść wiadomości. Celem jest odpowiedź na Twoje zapytanie. Podstawa prawna: art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes administratora).</p>
   <h4>Google Maps</h4>
-  <p>Gdy klikniesz „Załaduj mapę", serwis Google Maps może ustawiać własne pliki cookie oraz przetwarzać Twój adres IP. Dzieje się to wyłącznie na Twoje żądanie. Administratorem tych danych jest Google LLC. Szczegóły: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.</p>
+  <p>Na stronie kontaktowej osadzamy mapę Google Maps, która ładuje się automatycznie. Usługa ta może ustawiać własne pliki cookie oraz przetwarzać Twój adres&nbsp;IP. Administratorem tych danych jest Google LLC. Szczegóły: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.</p>
 
   <h3>3. Jak długo przechowujemy dane</h3>
   <p>Dane z formularza kontaktowego przechowujemy przez okres niezbędny do obsługi zapytania, nie dłużej niż 12 miesięcy od ostatniego kontaktu.</p>
 
   <h3>4. Odbiorcy danych</h3>
-  <p>Twoje dane mogą być przekazywane: dostawcy hostingu (GitHub Pages / Fastly), Google LLC (tylko w przypadku załadowania mapy – siedziba w USA, transfer na podstawie Standardowych Klauzul Umownych).</p>
+  <p>Twoje dane mogą być przekazywane: dostawcy hostingu (GitHub Pages / Fastly), Google LLC (usługa Google Maps – siedziba w USA, transfer na podstawie Standardowych Klauzul Umownych).</p>
 
   <h3>5. Twoje prawa</h3>
   <p>Na podstawie RODO przysługują Ci prawa do:</p>
@@ -29,10 +28,10 @@ const policyHTML = `
     <li>wniesienia sprzeciwu wobec przetwarzania,</li>
     <li>wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (UODO), ul. Stawki 2, 00-193 Warszawa.</li>
   </ul>
-  <p>Aby skorzystać z powyższych praw, skontaktuj się z nami pod adresem: <a href="mailto:kontakt@oborabikes.pl">kontakt@oborabikes.pl</a>.</p>
+  <p>Aby skorzystać z powyższych praw, skontaktuj się z nami pod adresem: <a href="mailto:oborabikeservice@gmail.com">oborabikeservice@gmail.com</a>.</p>
 
   <h3>6. Pliki cookie</h3>
-  <p>Strona samodzielnie hostuje wszystkie czcionki i zasoby — nie wysyłamy żadnych danych do zewnętrznych serwerów przy samym wejściu na stronę. Pliki cookie stron trzecich mogą pojawić się wyłącznie gdy użytkownik zdecyduje się załadować mapę Google Maps.</p>
+  <p>Strona samodzielnie hostuje wszystkie czcionki i zasoby. Na stronie kontaktowej osadzamy mapę Google Maps, która może ustawiać pliki cookie stron trzecich (Google LLC).</p>
   <p>Możesz zarządzać plikami cookie w ustawieniach swojej przeglądarki.</p>
 
   <h3>7. Zautomatyzowane podejmowanie decyzji</h3>

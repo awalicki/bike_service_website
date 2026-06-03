@@ -2,11 +2,11 @@ const base = import.meta.env.BASE_URL;
 
 export const siteData = {
   contact: {
-    phone: "+48 123 456 789",
-    phoneLink: "tel:+48123456789",
-    email: "kontakt@oborabikes.pl",
-    emailLink: "mailto:kontakt@oborabikes.pl",
-    location: "Warszawa, Polska",
+    phone: "+48 664 474 610",
+    phoneLink: "tel:+48664474610",
+    email: "oborabikeservice@gmail.com",
+    emailLink: "mailto:oborabikeservice@gmail.com",
+    location: "Bielina 3, 97-225 Ujazd",
     photos: [
       `${base}img/ft12.jpg`,
       `${base}img/ft13.jpg`,
@@ -81,7 +81,6 @@ export const siteData = {
     copyright: "© 2026 OBORA Serwis Rowerowy. Wszelkie prawa zastrzeżone.",
     developerCredits: "Chcesz podobną stronę internetową? Napisz na: ",
     developerEmail: "awalicki04@gmail.com",
-    nip: "000-000-00-00",
-    address: "ul. Przykładowa 1, 00-001 Warszawa",
+    address: "Bielina 3, 97-225 Ujazd",
   },
 };
