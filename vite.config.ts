@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite';
 
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/bike_service_website/' : '/',
+export default defineConfig({
+  base: '/',
   build: {
     outDir: 'docs',
   },
-}));
+});
